@@ -25,6 +25,15 @@ body {
 i {
     color: grey;
 }
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+footer hr {
+    border-top: 5px solid orangered;
+    width: 60%;
+    margin: auto;
+}
 /* Hamburger */
 .hamburger {
     width: 30px;
@@ -71,4 +80,5 @@ i {
     .nav a {
         border: none;
     }
+
 }
