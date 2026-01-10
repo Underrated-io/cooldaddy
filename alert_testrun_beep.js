@@ -1,1 +1,1 @@
-alert("Welcome to STONES INC&copy;, click ok to continue!")
+alert("NOTE THIS IS STILL A TEST PAGE!")
