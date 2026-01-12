@@ -3,113 +3,33 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>bio</title>
-        <link rel="stylesheet" href="mobile-nav.css">
-        <style>
-        body {
-            background-color: black;
-            color: white;
-        }          
-        h1 {
-            color: orangered;
-            font-size: 50px;
-        }
-
-        span {
-            font-style: italic;
-            color: gray;
-        }
-        
-        nav {
-            margin-top: 100px;
-            margin-bottom: 50px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0%;
-            text-align: right;
-            background: black;
-        }
-
-        nav li {
-            display: inline;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .currentpage {
-            border-bottom: black solid 5px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        footer hr {
-            border-top: 2px solid orangered;
-            width: 60%;
-            margin: auto;
-        }
-
-        .wrapper {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        img {
-            float: right;
-            margin-left: 5px;
-            margin-bottom: 5px;
-            width: 300px;
-            height: auto;
-        }
-        .header {
-            position: sticky;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 60px;
-            background: orangered;
-            align-items: center;
-            padding: 0 20px;
-            z-index: 1000;
-            text-align: right;
-            padding-top: 5% ;
-        }
-        .header2 {
-            text-align: center;
-        }
-
-
-    </style>
+        <link rel="stylesheet" href="bio.css">
     </head>
     <body>
-        <h1 class="header2">STONES INC&copy;</h1>
-        <div class="wrapper">
-            <nav class="header">
-                <button class="hamburger" aria-label="Toggle menu"><span></span></button>
-                <ul class="nav-links">
-                    <li>STONES INC&copy;</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="currentpage"><a href="bio.html">Bio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="messages.html">Chat</a></li>
-                    <li><a href="LoginPage.html">Logout</a></li>
-                </ul>
+        <header class="header" id="header1">
+            <h1 class="logo" id="logo1">STONES INC&copy;</h1>
+            <!-- Harmburger (small screens only) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </header>
+            <nav class="nav" id="nav">
+                <a href="index.html">Home</a>
+                <a href="bio.html" class="nav-links currentpage">Bio</a>
+                <a href="blog.html">Blog</a>
+                <a href="messages.html">Chat</a>
+                <a href="LoginPage.html">Logout</a>
             </nav>
-        
-                <header><h1>
-                    Dr. Alexander Cornelius Boople' Bio
-                </h1></header>
-        
-                <main>
+            <main class="content">
+            <h1 class="h1">
+                Dr. Alexander Cornelius Boople' Bio
+            </h1>
+                    <br>
+                    <br>
                     <p>
+                    <br>
+                    <br>
                         <img src="boople.png" 
                         alt="Dr. alexander boople in a lab coat with neon glasses,neon shirt, 
                         and neon coffee cup plus a hairdo taht could never be considered diginified">
@@ -121,7 +41,8 @@
                         the greater New Jersey Zombie Nest and is surrounded by people
                         he once considered the kind of friends he would like to have.
                     </p>
-        
+                    <br>
+                    <br>
                     <h2>Dr. Bopple's Favourite Things</h2>
                     (ts is unknown why he included these in his bio.)
                     <ul>
@@ -135,7 +56,8 @@
                             know errr...think he is(if this ever happens it will be <b>glorious</b>)
                         </li>
                     </ul>
-        
+                    <br>
+                    <br>
                     <h2>Steps to Resisting a Zombie's Frieeendship&trade;</h2>
                     <ol>
                         <li>Repeat to yourself: "I am good. I am great. I am worthy of <b>human</b> friendship"</li>
@@ -153,11 +75,10 @@
                         </li>
                         <li>But remember: don't believe the zombies. They lie-- even and <b>esspecially</b> Brad</li>
                     </ol>
-                </main>
+            </main>
             <footer><hr></footer>
-        </div>
-        &copy; 2026, by Jasper Stones&copy;.
-    <script src="mobile-nav.js" defer></script>
+        &copy; 2026, by Jasper Stones&copy;. All Rights Reserved.
+        <script src="hamburger.js"></script>
     </body>
 
 </html>
