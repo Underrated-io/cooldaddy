@@ -80,5 +80,7 @@ footer hr {
     .nav a {
         border: none;
     }
-
+    .nav-links.currentpage {
+        border-bottom: black solid 5px;
+    }
 }
