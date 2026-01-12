@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Live Chat</title>
   <link rel="stylesheet" href="messages.css" />
-  <link rel="stylesheet" href="mobile-nav.css">
 </head>
-<body class="wrapper">
-    <h1>STONES INC&copy;</h1>
-<!-- Optional Navigation -->
-<nav class="header">
-    <button class="hamburger" aria-label="Toggle menu"><span></span></button>
-    <ul class="nav-links">
-        <li>STONES INC&copy;</li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li class="currentpage"><a href="messages.html">Chat</a></li>
-        <li><a href="LoginPage.html">Logout</a></li>
-      </ul>
-</nav>
+<body>
+  <header class="header">
+    <h1 class="logo">STONES INC&copy;</h1>
+    <!-- Hamburger (small screens only) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-<div class="chat-container">
+<!-- Optional Navigation -->
+<nav class="nav" id="nav">
+  <a href="index.html">Home</a>
+  <a href="bio.html">Bio</a>
+  <a href="blog.html">Blog</a>
+  <a href="messages.html" class="nav-links currentpage">Chat</a>
+  <a href="LoginPage.html">Logout</a>
+</nav>
+<main class="content">
+  <div class="chat-container">
   <div class="chat-header">Live Chat</div>
 
   <div id="chat-messages" class="chat-messages"></div>
@@ -37,8 +41,9 @@
   </div>
 </div>
 
+</main>
 <script src="script.js"></script>
-<script src="mobile-nav.js" defer></script>
+<script src="hamburger.js" defer></script>
 </body>
 </html>
 
