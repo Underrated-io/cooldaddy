@@ -1,106 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="stylesheet" href="mobile-nav.css">
-        <style type="text/css">
-            body {
-                background-color: black;
-                color: white;
-            }
-            table, td, th {
-                border: 1px solid orangered;
-            }
-            table {
-                border-collapse: collapse;
-                width: 55%;
-            }
-            h1 {
-                text-align: center;
-            }
-            h3 {
-                color: orangered;
-            }
-            nav {
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            nav ul {
-                list-style-type: none;
-                padding: 0%;
-                margin: 0%;
-                text-align: right;
-                background: black;
-            }
-            nav li {
-                display: inline;
-                padding: 10px;
-            }
-            nav a {
-                text-decoration: none;
-                color: white;
-            }
-            .currentpage {
-                border-bottom: 5px solid black;
-            }
-            h1 {
-                color: orangered;
-            }
-            .header {
-                position: sticky;
-                top: 0%;
-                left: 0%;
-                width: 100%;
-                height: 60px;
-                background-color: orangered;
-                align-items: center;
-                padding: 0 20px;
-                z-index: 1000;
-                padding-top: 5%;
-            }
-            .wrapper {
-                max-width: 1000px;
-                margin: auto;
-            }
-            img {
-                max-width: 200px;
-                height:auto;
-                border-radius:0%;
-                border: 2px solid #333;
-                display: block;
-                object-fit: cover;
-            }
-            #para1 {
-                text-align: center;
-                color: orange;
-            }
-            .center {
-                text-align: center;
-                text-decoration: underline;
-                color: orange;
-            }
-        </style>
+        <link rel="stylesheet" href="blog.css">
     </head>
     <body>
-        <div class="wrapper">
-            <h1>STONES INC&copy;</h1>
-            <nav class="header">
-                <button class="hamburger" aria-label="Toggle menu"><span></span></button>
-                <ul class="nav-links">
-                    <li>STONES INC&copy;</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li ><a href="bio.html">Bio</a></li>
-                    <li class="currentpage"><a href="messages.html">Blog</a></li>
-                    <li><a href="messages.html">Chat</a></li>
-                    <li><a href="LoginPage.html">Logout</a></li>
-                </ul>
-            </nav>
+        <header class="header" id="header1">
+            <h1 class="logo" id="logo1">STONES INC&copy;</h1>
+            <!-- Harmburger (small screens only) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <nav class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="bio.html">Bio</a>
+            <a href="messages.html" class="nav-links currentpage">Blog</a>
+            <a href="messages.html">Chat</a>
+            <a href="LoginPage.html">Logout</a>
+        </nav>
+        <main class="content">
             <h1>STONES INC</h1>
             <p id="para1">Hello World</p>
+            <br>
             <p id="para1">Welcome to Stones Inc&copy;</p>
-            <p>Well this is a dummy website for my intended company, so basically its just bunch of rookie codes and hoping it works out lol.</p>
-            <p class="center">Welcome to my first webpage</p>
+            <br>
+            <p>Well this is a dummy website for my intended company, so basically its just bunch of rookie codes and hoping it works out lol.</p><br>
+            <p class="center">Welcome to my first webpage</p><br>
             <p>
                 This is the CEO Stones Group, actually its stones inc but i'm hoping i can delve into other industries like fashion,aviation,oil and the likes.<br>
                 But most especially fashion, why fashion some might ask (that's if anybody ever ready this and asks why fashion lol), i'm actually inspired by Kanye West otherwise known as"YE" CEO of the YEZZY brand.<br>
@@ -108,8 +38,8 @@
                 i dunno what to say atm lol, maybe we'll come back to this.<br>
                 but for now this would be a blog website.<br>
                 Let's talk about me then...<br>
-            </p>
-            <h3>About the CEO</h3>
+            </p><br>
+            <h3>About the CEO</h3><br>
             <p>
             My Name Is <b>JASPER STONES</b>
             I am a citizen of a  Happy Place, a fantasy world in my head
@@ -119,7 +49,7 @@
             NO! of course. So on a faithful anyday lol i had an eureka moment why don't I learn how to hack, maybe i could shut down one of your popular social media app for a week, while their IT dept. scrambles day in day out to fix it lol...<br>
             Long story short cos i'm getting tired of typing as it is lol, i've had lots of dreams, i've wanted to be lots of things sadly i don't have the drive to be anybody in life.<br>
             But i promise yall future readers and users of this upcoming blog of mine, i'd add hyperlinks to each gaps in this write-up so you can get an indept insight of the life of CEO STONES INC/GROUP<br>
-            </p>
+            </p><br>
             <h3>Want to learn how to create your own website?</h3>
             <p>
                 One of the first things i had to do so i could achieve and garner some level of knowledge and information in coding is starting first.
@@ -183,6 +113,9 @@
                 Darren Shan : to be continued later when i'm ready 
             </p>
         </div>
-    <script src="mobile-nav.js" defer></script>
+        </main>
+        <footer><hr></footer>
+        &copy; 2026, by Jasper Stones&copy;.All Rights Reserved
+    <script src="hamburger.js" defer></script>
     </body>
 </html>
