@@ -50,7 +50,7 @@ footer hr {
     margin: auto;
 }
 img {
-    max-width: 100px;
+    width: 300px;
     height:auto;
     border-radius:0%;
     border: 2px solid #333;
