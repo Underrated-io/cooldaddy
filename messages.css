@@ -1,39 +1,72 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile first (default) */
 body {
     font-family: Arial, sans-serif;
-    background: black;
-    display:flex;
-    flex-direction:column;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Ariel;
-  }
-  
-  /* Optional Nav */
-  nav {
-    display: inline;
-    gap: 15px;
-    padding: 10px;
+    padding: 15px;
+    background: orangered;
+}
+.h1 {
+    color: orangered;
+}
+i {
+    color: grey;
+}
+footer {
+    text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  nav ul {
-    list-style-type: none;
+}
+footer hr {
+    border-top: 5px solid orangered;
+    width: 60%;
+    margin: auto;
+}
+/* Hamburger */
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    height: 3px;
     background: black;
-  }
-  
-  nav li{
+    margin: 6px 0;
+}
+/* Mobile Menu */
+.nav {
+    display: none;
+    flex-direction: column;
+    background: orangered;
+}
+.nav a {
+    padding: 15px;
     text-decoration: none;
-    display: inline;
-    color: white;
-    padding: 10px;
-  }
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
-  
+    color: black;
+    border-bottom: 1px solid black;
+}
+.nav.show {
+    display: flex;
+}
+.content {
+    padding: 15px;
+    font-family: none;
+}
+.logo {
+    color: black;
+}
   .chat-container {
     width: 350px;
     background: white;
@@ -119,6 +152,21 @@ body {
 h1 {
     color: orangered;
 }
-.currentpage {
-    border-bottom: 5px solid black;
+.nav-links.currentpage {
+  border-bottom: black solid 5px;
+}
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav a {
+        border: none;
+    }
+
 }
