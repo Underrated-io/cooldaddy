@@ -34,6 +34,13 @@ footer hr {
     width: 60%;
     margin: auto;
 }
+img {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: auto;
+}
 /* Hamburger */
 .hamburger {
     width: 30px;
