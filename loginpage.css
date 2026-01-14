@@ -1,0 +1,43 @@
+    padding: 12px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+/* Signup text */
+.signup {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Mobile Adjustment*/
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .login-container{
+        max-width: 450px;
+    }
+}
