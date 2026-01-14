@@ -1,0 +1,89 @@
+/* Mobile navigation shared styles */
+/* Basic reset for nav components */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  background: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 6px;
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+  display: grid;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+.hamburger span {
+  position: relative;
+}
+.hamburger span::before,
+.hamburger span::after {
+  content:icon;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.hamburger span::before { top: -8px; }
+.hamburger span::after { top: 8px; }
+
+/* Small screens: hide desktop horizontal menu and show hamburger */
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: orangered;
+    position: absolute;
+    right: 12px;
+    top: 60px;
+    min-width: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px white;
+  }
+
+  .hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* When nav is open */
+  .header.open .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    display: block;
+    padding: 12px 16px;
+    border-bottom: 1px solid white;
+    text-align: right;
+  }
+
+  .nav-links a {
+    color: white;
+  }
+
+  /* Make header content align nicely */
+  .header { position: relative; }
+}
+
+/* Larger screens: ensure nav is horizontal */
+@media (min-width: 801px) {
+  .nav-links { display: flex; }
+  .nav-links li { display: inline-block; }
+}
